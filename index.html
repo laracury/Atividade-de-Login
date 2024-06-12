@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +13,23 @@
         <h1>Login</h1>
         <p>E-mail<input type="email">.com</p>
         <p>Senha<input type="password"></p>
-        <button type="submit">Login</button>
+        <form>
+            <button type="submit"  class="btn btn-warning btn-lg btn-block">Click Me</button>
+        </form>
         <p>Ainda não tem cadastro?</p>
         <p><a href="cadastro.html">Criar cadastro</a></p>
         </article>
     </section>
 </body>
+<script>
+    $('form').on('submit',function(e){
+    e.preventDefault();
+    var but = $(this).find('[type="submit"]').toggleClass('sending').blur();
+  
+    setTimeout(function(){
+        but.removeClass('sending').blur();
+    },4500);
+  
+    })
+</script>
 </html>
