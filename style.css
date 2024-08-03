@@ -1,40 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --fontePadrao:'Roboto', sans-serif;
+}
+
 *{
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
- }
- body{
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(121, 119, 9) 35%, rgb(255, 238, 0) 100%);
- }
- section{
-     width: auto;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- .box{
-     background-color: white;
-     width: 450px;
-     height: 300px;
-     display: grid;
-     align-items: center;
-     justify-content: center;
-     margin-top: 10%;
-     border-radius: 20px;
- }
- h1{
-     justify-self: center;
- }
- input{
-     margin-left: 4px;
- }
- /*button{
-     border-radius: 5px;
-     width: 100px;
-     justify-self: center;
-     cursor: pointer;
-     background-color: rgba(20, 107, 107, 0.377);
- }*/
- a{
-     color: blue;
- }
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(238, 202, 226) 0%, rgb(231, 164, 203) 35%, rgb(226, 120, 200));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-color: transparent;
+    border: .5px solid rgb(82, 14, 61);
+    box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.158);
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    border-radius: 10px;
+    padding: 0 2rem 1rem 2rem;
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
+    font-family: var(--fontePadrao);
+    color: rgb(46, 45, 45);
+}
+
+label{
+    font-family: var(--fontePadrao);
+    font-size: 1.5rem;
+    }
+
+input{
+    border: none;
+    border-radius: 3px;
+    width: 90%;
+    height: 1.5rem;
+    font-family: var(--fontePadrao);
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+button{
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(245, 198, 235);
+    border: none;
+    color: rgb(85, 83, 83);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.144);
+    cursor: pointer;
+}
+ 
+p{
+    font-family: var(--fontePadrao);
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+a{
+    color: rgb(75, 75, 235);
+}

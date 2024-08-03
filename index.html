@@ -9,27 +9,18 @@
 </head>
 <body>
     <section>
-        <article class="box">
-        <h1>Login</h1>
-        <p>E-mail<input type="email">.com</p>
-        <p>Senha<input type="password"></p>
-        <form>
-            <button type="submit"  class="btn btn-warning btn-lg btn-block">Click Me</button>
+        <form class="box">
+            <h1>Login</h1>
+            <label for="e-mail">Email:</label>
+            <input type="email" placeholder="Digite seu e-mail">
+            <label for="senha">Senha:</label>
+            <input type="password" placeholder="Digite sua senha">
+            <button>Login</button>
+            <p>Esqueceu sua senha?<a href="cadastro.html">Clique aqui!</a></p>
         </form>
-        <p>Ainda não tem cadastro?</p>
-        <p><a href="cadastro.html">Criar cadastro</a></p>
-        </article>
     </section>
 </body>
 <script>
-    $('form').on('submit',function(e){
-    e.preventDefault();
-    var but = $(this).find('[type="submit"]').toggleClass('sending').blur();
-  
-    setTimeout(function(){
-        but.removeClass('sending').blur();
-    },4500);
-  
-    })
+    
 </script>
 </html>

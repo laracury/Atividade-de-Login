@@ -6,20 +6,30 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <article class="box">
-            <h1>Faça seu Cadastro!</h1>
-            <p>Nome Completo<input type="text"></p>
-            <p>Data de Nascimento <input type="date"></p>
-            <p>Email principal <input type="email"></p>
-            <p>Confirme o e-mail <input type="email"></p>
-            <p>Crie uma senha <input type="password"></p>
-            <button onclick="criaConta()">Criar conta</button>
-            <p><a href="index.html">Fazer login</a></p>
-        </article>
-    </section>
+    <form style="margin-top: -10%;" class="box">
+        <h1>Faça seu cadastro</h1>
+        <label for="nome">Nome completo:</label>
+        <input type="text" placeholder="Digite seu nome completo">
+        <label for="data">Data de Nascimento:</label>
+        <input type="date">
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="Digite seu e-mail">
+        <label for="email">Repita seu e-mail</label>
+        <input type="email">
+        <label for="senha">Crie uma senha</label>
+        <input type="password">
+        <button onclick="criaConta()">Criar conta</button>
+        <p><a href="index.html">Fazer Login</a></p>
+    </form>
 </body>
 <script>
     function criaConta()
