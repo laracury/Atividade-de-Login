@@ -11,11 +11,8 @@
 
 body{
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(238, 202, 226) 0%, rgb(231, 164, 203) 35%, rgb(226, 120, 200));
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(34, 34, 34);
 }
-
 section{
     width: auto;
     display: flex;
@@ -24,7 +21,7 @@ section{
 }
 
 .box{
-    background-color: transparent;
+    background-color: rgba(240, 135, 152, 0.788);
     border: .5px solid rgb(82, 14, 61);
     box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.158);
     width: 500px;
@@ -48,16 +45,17 @@ h1{
 label{
     font-family: var(--fontePadrao);
     font-size: 1.5rem;
-    }
+}
 
 input{
     border: none;
     border-radius: 3px;
     width: 90%;
-    height: 1.5rem;
+    font-size: 1.5rem;
     font-family: var(--fontePadrao);
     font-size: 1.1rem;
-    padding-left: 1rem;
+    padding: 5px 16px;
+    margin: 10px 0px;
 }
 
 button{
@@ -66,12 +64,13 @@ button{
     margin-top: 2rem;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: rgb(245, 198, 235);
+    background-color: black;
     border: none;
-    color: rgb(85, 83, 83);
+    color: white;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.144);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
     cursor: pointer;
+    padding: .5rem;
 }
  
 p{
@@ -81,5 +80,7 @@ p{
 }
 
 a{
-    color: rgb(75, 75, 235);
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(19, 19, 119);
 }
